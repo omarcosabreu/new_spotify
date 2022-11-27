@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif; 
+    background-image: url(https://img.freepik.com/fotos-gratis/mulher-alegre-feliz-usando-fones-de-ouvido-ouvindo-musica-de-estudio-de-smartphone-tiro-isolado-na-parede-amarela_231208-1690.jpg?w=2000);
+    background-size: cover;
+    background-image: center;
+    background-repeat: no-repeat;
+}
+
+
+.container > img {
+    height: 40px;
+    display: block;
+}
+
+
+#burguer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    margin-top: -50px;
+    text-align: end;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    /* background-color: white; */
+    color: #1db954;
+}
+
+#items {
+    display: none;
+    list-style: none;
+}
+
+#items li a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    /* border-top: 2px solid gray; */
+}
+
+#items li a:hover {
+    color: #1db954;
+}
+
+/* Showcase */
+
+#showcase {
+    /* height: 100vh; */
+    height: 45vh; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #showcase .showcase__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .showcase__container h2 {
+    font-size: 55px;
+    margin-top: 30px;
+  }
+  
+  .showcase__container p {
+    margin-top: 15px;
+    margin: 15px 0;
+    /* color: black; */
+    font-weight: 400;
+  }
+
+  .btn-primary {
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 58px; 
+    margin-top: 20px;
+    background: #1db954;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background: #1ed760;
+  }
+
+  /* Post */
+
+  

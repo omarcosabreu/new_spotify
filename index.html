@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Righteous&family=Roboto&family=Sarala:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="container">
+          <img src="./assets/spotify.png" alt="logo spotify">
+          <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            
+            <ul id="items">
+              <li><a href="#">Premiun</a></li>
+              <li><a href="#">Ajuda</a></li>
+              <li><a href="#">Baixar</a></li>
+              <li role="separator" class="mh-header-primary svelte-1i2hclv"></li>
+              <li><a href="#">Inscrever-se</a></li>
+              <li><a href="#">Entrar</a></li>
+            </ul>
+        </div>
+      </nav>
+  </header>
+
+  <!-- Showcase -->
+  <div id="showcase">
+    <div class="showcase__container">
+        <h2>Música para todos</h2>
+        <p>Milhões de músicas à sua escolha. E nem precisa de cartão de crédito</p>
+        <a href="https://accounts.spotify.com/pt-PT/login?continue=https%3A%2F%2Fwww.spotify.com%2Fbr%2Fpurchase%2Foffer%2Fdefault-trial-1m%2F%3Fcountry%3DBR" target="_blank">
+        <button class="btn-primary">Obtenha o Spotify Free</button></a>
+    </div>
+  </div>
+
+   <!-- Post -->
+   <article class="post">
+    <div class="post__container">
+      <h2>Aproveite 1 mês grátis de Premium</h2>
+      <p>Depois, pague somente R$ 19,90/mês. Cancele quando quiser.</p>
+
+      <div>
+        <a href="#"><button type="button" class="btn__comecar">Começar</button></a>
+        <a href="#"><button type="button" class="btn__plano">Ver Planos</button></a>
+      </div>
+      <div class="footer__post">
+        <p class="terms">
+          <a href="https://www.spotify.com/legal/premium-promotional-offer-terms">Sujeito a Termos e Condições.</a>
+          O mês grátis não está disponível para usuários que já experimentaram o Premium.
+        </p>  
+      </div>  
+    </div>
+   </article>
+   
+    <!-- <script>
+      function clickMenu() {
+          if (items.style.display === 'none') {
+              items.style.display = 'block';
+          } else {
+              items.style.display = 'none';
+          }
+     }
+    </script> -->
+    <script src="./main.js"></script>
+</body>
+</html>
