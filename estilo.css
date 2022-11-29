@@ -5,17 +5,20 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif; 
-    background-image: url(https://img.freepik.com/fotos-gratis/mulher-alegre-feliz-usando-fones-de-ouvido-ouvindo-musica-de-estudio-de-smartphone-tiro-isolado-na-parede-amarela_231208-1690.jpg?w=2000);
-    background-size: cover;
-    background-image: center;
-    background-repeat: no-repeat;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(./assets/woman.jpg);
+    /* background-image: url(https://img.freepik.com/fotos-gratis/mulher-alegre-feliz-usando-fones-de-ouvido-ouvindo-musica-de-estudio-de-smartphone-tiro-isolado-na-parede-amarela_231208-1690.jpg?w=2000); */
+  background-size: 450px 400px;
+  background-repeat: no-repeat; 
 }
 
 
 .container > img {
     height: 30px;
     display: block;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 
@@ -28,11 +31,6 @@ body {
     margin-top: -45px;
     text-align: end;
     cursor: pointer;
-}
-
-#burguer:hover {
-    /* background-color: white; */
-    color: #1db954;
 }
 
 #items {
@@ -58,41 +56,42 @@ body {
 /* Showcase */
 
 #showcase {
-    /* height: 100vh; */
-    height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color;
-    display: block;
-    flex-direction: column;
-    align-items: center;
   }
   
   #showcase .showcase__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
   }
   
   .showcase__container h2 {
-    font-size: 55px;
-    margin-top: 30px;
-    margin: 20px; 
+    font-size: 45px;
   }
   
   .showcase__container p {
-    margin-top: 10px;
-    margin: 20px;
-    /* color: black; */
-    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: 500;
   }
 
-  .btn-primary {
+  .showcase__container a {
+    text-decoration: none;
+  }
+
+  .btn__primary {
     letter-spacing: 1px;
     border: none;
     border-radius: 30px;
     padding: 15px 58px; 
-    margin-top: 20px;
+    margin-top: 15px;
     background: #1db954;
     color: white;
     text-transform: uppercase;
@@ -106,4 +105,97 @@ body {
 
   /* Post */
 
+  #post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background: #DF0C8B;
+  }
+
+  .post__container {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 20px; 
+    color: white;
+  }
+
+  .post__container h2 {
+    font-size: 30px;
+    margin-top: 25px;  
+  }
   
+  .post__container p {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .post__container a {
+    text-decoration: none;
+  }
+/*-------------------------------*/
+
+
+.button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.button > a {
+  margin-right: 10px;
+  transition: transform .1s;
+}
+
+.button > a:hover {
+  transform: scale(1.04);
+}
+
+.btn__experience {
+  width: 90vw;
+  padding: 15px 40px;
+  background: black;
+  color: white; 
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  }
+
+  .btn__experience:hover {
+    cursor: pointer;
+  }
+
+.btn__plano {
+  width: 90vw;
+  padding: 15px 40px;
+  background: #DF0C8B;
+  margin-top: 15px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  border: 3px solid white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btn__plano:hover {[
+  cursor: pointer;
+]}
+
+.footer__post {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.terms {
+  font-weight: 400;
+}  
+
+.terms a {
+  text-decoration: underline;
+  color: white;
+}
