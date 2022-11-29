@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-image: url(./assets/woman.jpg);
     /* background-image: url(https://img.freepik.com/fotos-gratis/mulher-alegre-feliz-usando-fones-de-ouvido-ouvindo-musica-de-estudio-de-smartphone-tiro-isolado-na-parede-amarela_231208-1690.jpg?w=2000); */
-  background-size: 450px 400px;
+  background-size: 520px 650px;
   background-repeat: no-repeat; 
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 .btn__experience {
-  width: 95vw;
+  width: 100%;
   padding: 15px 40px;
   background: black;
   color: white; 
@@ -160,6 +160,7 @@ body {
   border: none;
   border-radius: 30px;
   font-weight: 700;
+  font-size: 12px;
   }
 
   .btn__experience:hover {
@@ -167,7 +168,7 @@ body {
   }
 
 .btn__plano {
-  width: 95vw;
+  width: 100%;
   padding: 15px 40px;
   background: #DF0C8B;
   margin-top: 15px;
