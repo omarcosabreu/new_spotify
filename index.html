@@ -14,32 +14,23 @@
 </head>
 <body>
     <header>
-      <nav>
+      <nav role="navigation" aria-label="mobile navigation">
         <div class="container">
           <img src="./assets/spotify.png" alt="logo spotify">
-          <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+          <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
             
             <ul id="items">
-              <li><a href="#">Premiun</a></li>
-              <li><a href="#">Ajuda</a></li>
-              <li><a href="#">Baixar</a></li>
-              <li role="separator" class="mh-header-primary svelte"></li>
-              <li><a href="#">Inscrever-se</a></li>
-              <li><a href="#">Entrar</a></li>
+              <li class="login"><a href="index.html">Premiun</a></li>
+              <li class="login"><a href="https://support.spotify.com/br/?_gl=1*w0betc*_gcl_aw*R0NMLjE2Njk5NDQ0OTAuQ2owS0NRaUFtNXljQmhDWEFSSXNBUGxkem9WeUFPaU5tT2VyYUN1RFo2T3hUZ0dfc0RTRXdwcTk1VVVjYWFFSnJucUlCdVdhelhsYzUtMGFBb1pRRUFMd193Y0I.*_gcl_dc*R0NMLjE2Njk5NDQ0OTAuQ2owS0NRaUFtNXljQmhDWEFSSXNBUGxkem9WeUFPaU5tT2VyYUN1RFo2T3hUZ0dfc0RTRXdwcTk1VVVjYWFFSnJucUlCdVdhelhsYzUtMGFBb1pRRUFMd193Y0I."
+                >Suporte</a></li>
+              <li class="login"><a href="#">Baixar</a></li>
+              <li role="separator" class="separator"></li>
+              <li class="login_color"><a href="#">Inscrever-se</a></li>
+              <li class="login_color"><a href="#">Entrar</a></li>
             </ul>
         </div>
       </nav>
   </header>
-
-  <!-- Showcase -->
-  <div id="showcase">
-    <div class="showcase__container">
-        <h2>Música para todos</h2>
-        <p>Milhões de músicas à sua escolha. E nem precisa de cartão de crédito</p>
-        <a href="https://accounts.spotify.com/pt-PT/login?continue=https%3A%2F%2Fwww.spotify.com%2Fbr%2Fpurchase%2Foffer%2Fdefault-trial-1m%2F%3Fcountry%3DBR" target="_blank">
-        <button class="btn__primary">Obtenha o Spotify Free</button></a>
-    </div>
-  </div>
 
    <!-- Post -->
    <article id="post">
@@ -59,6 +50,55 @@
       </div>  
     </div>
    </article>
+
+   <article id="post_two">
+    <header class="post__header">
+      <h2>Por que ser Premium?</h2>
+    </header>
+      <ul >
+        <li class="post__premium">
+            <div class="premium__image__one"></div>
+            <div>
+              <p class="post_two_text">Modo offline.</p>
+              <p>Ouça música onde estiver.</p>
+            </div> 
+        </li>
+
+        <li class="post__premium">
+          <div class="premium__image__two"></div>
+          <div>
+            <p class="post_two_text">Ouça músicas sem anúncios.</p>
+            <p>Curta música sem anúncios.</p>
+          </div>
+        </li>
+
+        <li class="post__premium">
+          <div class="premium__image__three"></div>
+          <div>
+            <p class="post_two_text">Ouça na ordem que quiser.</p>
+            <p>Qualquer música em qualquer ordem.</p>
+          </div>  
+        </li>
+        
+        <li class="post__premium">
+          <div class="premium__image__four"></div>
+          <div>
+            <p class="post_two_text">Qualidade de som superior</p>
+            <p>Sinta o som.</p>
+          </div>  
+        </li>
+      </ul> 
+   </article>
+
+   <!-- Showcase -->
+  <div id="showcase">
+    <div class="showcase__container">
+        <h2>Música para todos</h2>
+        <p>Milhões de músicas à sua escolha. E nem precisa de cartão de crédito</p>
+        <a href="https://accounts.spotify.com/pt-PT/login?continue=https%3A%2F%2Fwww.spotify.com%2Fbr%2Fpurchase%2Foffer%2Fdefault-trial-1m%2F%3Fcountry%3DBR" target="_blank">
+        <button class="btn__primary">Obtenha o Spotify Free</button></a>
+    </div>
+  </div>
    
     <!-- <script>
       function clickMenu() {
