@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+  font-size: 18px;
+}
+
 body {
   display: block;
   font-family: 'Roboto', sans-serif;
-  /*
-  background-image: url(https://img.freepik.com/fotos-gratis/mulher-alegre-feliz-usando-fones-de-ouvido-ouvindo-musica-de-estudio-de-smartphone-tiro-isolado-na-parede-amarela_231208-1690.jpg?w=2000);
-  */
   background-color: black;
 }
 
@@ -18,7 +19,7 @@ body {
     height: 30px;
     display: block;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 
@@ -42,7 +43,7 @@ body {
 #items li a {
     display: block;
     padding: 15px 25px;
-    font-size: 25px;
+    font-size: 1.4em;
     text-decoration: none;
     text-align: start;
     /* background-color: rgba(0, 0, 0, 0.8); */
@@ -71,38 +72,6 @@ body {
   background-color: white;
 }
 
-
-
-  /* Post */
-
-  #post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    background: #DF0C8B;
-  }
-
-  .post__container {
-    /* display: flex;
-    flex-direction: column; */
-    margin: 20px; 
-    color: white;
-  }
-
-  .post__container h2 {
-    font-size: 30px;
-    margin-top: 25px;  
-  }
-  
-  .post__container p {
-    font-size: 18px;
-    margin-top: 25px;
-  }
-
-  .post__container a {
-    text-decoration: none;
-  }
 /*-------------------------------*/
 
 
@@ -130,7 +99,7 @@ body {
   border: none;
   border-radius: 30px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.7em;
   }
 
   .btn__experience:hover {
@@ -162,14 +131,44 @@ body {
 }
 
 .footer__post p {
-  font-size: 12px;
+  font-size: 0.7em;
 }  
 
 .terms a {
-  font-size: 12px;
+  font-size: 1em;
   text-decoration: underline;
   color: white;
 }
+
+
+ /* Post */
+
+ #post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background: #DF0C8B;
+}
+
+.post__container {
+  margin: 20px; 
+  color: white;
+}
+
+.post__container h2 {
+  font-size: 1.7em;
+  margin-top: 25px;  
+}
+
+.post__container p {
+  margin-top: 25px;
+}
+
+.post__container a {
+  text-decoration: none;
+}
+
 
 /* Post 2 */
 
@@ -188,7 +187,7 @@ body {
 }
 
 .post__header{
-  font-size: 20px;
+  font-size: 1.1em;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -256,13 +255,12 @@ body {
 }
 
 
-/* Showcase */
+/* Post 3 */
 
-#showcase {
+#post_three {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: ; 
   background-image: url(./assets/woman.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -271,7 +269,7 @@ body {
   background-blend-mode: color;
 }
 
-#showcase .showcase__container {
+#post_three .showcase__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,7 +277,8 @@ body {
 }
 
 .showcase__container h2 {
-  font-size: 45px;
+  margin-top: 30px;
+  font-size: 2.2em;
 }
 
 .showcase__container p {
@@ -297,7 +296,7 @@ body {
   border: none;
   border-radius: 30px;
   padding: 15px 58px; 
-  margin-top: 15px;
+  margin-top: 10px;
   background: #1ed760;
   color: white;
   text-transform: uppercase;
@@ -308,3 +307,112 @@ body {
 .btn-primary:hover {
   background: #1db954;
 }
+
+/* ------------------------------------------------------------------------------------------ */
+/* Post 3 */
+
+#post_four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  color: #202f72;
+  background-color: #f46ebe;
+}
+
+#post_four h4 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#post_four h2 {
+margin: 20px;
+}
+
+#post_four h3 {
+  margin: 20px;
+  margin-top: -10px;
+  font-size: 1em;
+}
+
+.best2022 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.best2022 li {
+  display: flex;
+  align-items: center;
+}
+
+.best2022 img {
+  margin: 20px;
+  width: 140px;
+  height: 140px;
+  transition: transform 0.3s;
+}
+
+.intro {
+  margin: 5px;
+}
+
+.best2022 img:hover {
+  transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Footer */
+
+#mh_footer .logo__spotify {
+  margin-top: 50px;
+  margin-left: 20px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topics__footer {
+  color: #919496;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-top: 55px;
+  margin-left: 20px;
+}
+
+.access__footer {
+  color: white;
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.access__footer:hover {
+  color: #1ed760;
+}
+
+
+
+/* Footer Socials */
+
+.social_icons {
+  margin-top: 100px;
+  }
+  
+  
+.social_icons i {
+    margin: 50px 10px 22px;
+    font-size: 1.7rem;
+    transition: all 300ms ease;
+  }
+  
+  .socials_icons i:hover {
+    color: #1db954;
+    cursor: pointer;
+  }
+
+
